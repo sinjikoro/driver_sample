@@ -1,2 +1,3 @@
 android/app/repo/*
 ios/framework/*
+ios/SampleDriver.xcodeproj/project.xcworkspace/*
