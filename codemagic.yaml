@@ -25,7 +25,7 @@ workflows:
       cancel_previous_builds: false
     scripts:
       - name: test
-        script: echo 'test comp'
+        script: echo 'test compa'
     # artifacts:
     #   - build/**/outputs/repo
     #   - build/ios/framework
