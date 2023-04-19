@@ -19,10 +19,10 @@ workflows:
       events:
         - push
       branch_patterns:
-        - pattern: 'deploy/*'
+        - pattern: '*'
           include: true
           source: true
-      cancel_previous_builds: false
+      cancel_previous_builds: true
     scripts:
       - name: test
         script: echo 'test comp'
