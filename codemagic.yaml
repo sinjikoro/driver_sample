@@ -3,7 +3,7 @@ workflows:
     name: driver build
     labels:
       - test
-    instance_type: mac_mini_m1
+    instance_type: linux
     max_build_duration: 60
     environment:
       groups:
@@ -22,7 +22,7 @@ workflows:
         - pattern: 'deploy/*'
           include: true
           source: true
-      cancel_previous_builds: false
+      cancel_previous_builds: true
     scripts:
       - name: test
         script: echo 'test compa'
