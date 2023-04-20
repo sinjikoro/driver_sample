@@ -5,7 +5,6 @@ workflows:
         - push
       branch_patterns: 
         - pattern: '*'
-        - pattern: develop
           include: true
       cancel_previous_builds: true
     scripts:
