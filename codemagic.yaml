@@ -30,9 +30,6 @@ workflows:
     scripts:
       - name: test
         script: echo 'test comp'
-    # artifacts:
-    #   - build/**/outputs/repo
-    #   - build/ios/framework
     publishing:
       email:
         recipients:
