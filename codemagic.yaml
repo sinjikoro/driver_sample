@@ -29,10 +29,13 @@ workflows:
       cancel_previous_builds: false
     scripts:
       - name: test
-        script: echo 'test comp'
+        script: |
+          mkdir sdk
+          cd sdk
+          git clone --depth 1 git@github.com:infcurion/${DRIVER_REPO_NAME}.git
     publishing:
       email:
         recipients:
           - shinnaga.dev@gmail.com
       scripts:
-        - echo 'Post-publish script'
+        - echo 'Post-publish script a'
