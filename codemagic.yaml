@@ -29,7 +29,7 @@ workflows:
       cancel_previous_builds: false
     scripts:
       - name: test
-        script: |
+        script:
           mkdir sdk
           cd sdk
           git clone --depth 1 git@github.com:infcurion/${DRIVER_REPO_NAME}.git
